@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="but_start">Старт</string>
+    <string name="records">There should be records table.</string>
+    <string name="info">by Kulikov Alexandr\n\n
+    My App v.1</string>
+</resources>
