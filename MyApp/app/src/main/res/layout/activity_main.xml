@@ -16,6 +16,7 @@
         android:layout_row="1"
         android:background="#FFFFFF"
         android:src="@drawable/ic_launcher_state"
+        android:onClick="play"
         />
 
     <ImageButton

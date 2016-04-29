@@ -15,12 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InfoActivity"
-            android:label="About programm"/>
-        <activity android:name=".RecordsActivity"
-            android:label="Records">
-
-        </activity>
+        <activity
+            android:name=".PlayActivity"
+            android:label="Sorry, it's only demo(^_^)"
+            />
+        <activity
+            android:name=".InfoActivity"
+            android:label="About programm" />
+        <activity
+            android:name=".RecordsActivity"
+            android:label="Records"></activity>
     </application>
 
 </manifest>
