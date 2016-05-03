@@ -1,8 +1,9 @@
 package com.example.myapp;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.View;
 
@@ -19,19 +20,14 @@ class DrawView extends View {
     protected void onDraw(Canvas canvas) {
         w = getWidth();
         h = getHeight();
-        cx = w / 2;
-        cy = h / 2;
 
-        if (w > h) {
-            radius = h / 4;
-        } else {
-            radius = w / 4;
-        }
-        canvas.drawColor(Color.RED);
-        mPaint.setAntiAlias(true);
-        mPaint.setColor(Color.BLACK);
-        mPaint.setStyle(Paint.Style.FILL);
-        canvas.drawCircle(cx, cy, radius, mPaint);
+        //RectF dst=new RectF(getHeight(),getWidth(),getHeight(),getWidth());
+        Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.bground1);
+        canvas.drawBitmap(b, 0,0,null);
+        Bitmap car = BitmapFactory.decodeResource(getResources(), R.drawable.car1);
+        canvas.drawBitmap(car,406,600,null);
+        //canvas.drawBitmap(car,190,600,null);
+
     }
 
 }
